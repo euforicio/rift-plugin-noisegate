@@ -10,7 +10,7 @@
 // filler, boilerplate, repetitive confirmations.
 //
 // Also registers `noisegate_watchword` to check if a phrase is known noise.
-import { type BbPluginApi } from "@get-bb/plugin-sdk";
+import { type RiftPluginApi } from "@riftlabs/plugin-sdk";
 import { z } from "zod";
 
 // ─── Noise patterns — full-match suppression ────────────────────────
@@ -79,7 +79,7 @@ const SUBSTRING_NOISE: RegExp[] = [
 
 // ─── Plugin entry ────────────────────────────────────────────────────
 
-export default async function plugin(bb: BbPluginApi) {
+export default async function plugin(bb: RiftPluginApi) {
   bb.log.info("bb-plugin-noisegate loaded");
 
   const settings = bb.settings.define({
