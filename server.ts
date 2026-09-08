@@ -80,7 +80,7 @@ const SUBSTRING_NOISE: RegExp[] = [
 // ─── Plugin entry ────────────────────────────────────────────────────
 
 export default async function plugin(bb: RiftPluginApi) {
-  bb.log.info("bb-plugin-noisegate loaded");
+  bb.log.info("rift-plugin-noisegate loaded");
 
   const settings = bb.settings.define({
     customNoise: {
@@ -193,6 +193,6 @@ export default async function plugin(bb: RiftPluginApi) {
   // ── Cleanup ──────────────────────────────────────────────────────
 
   bb.onDispose(() => {
-    bb.log.info("bb-plugin-noisegate disposed");
+    bb.log.info("rift-plugin-noisegate disposed");
   });
 }

@@ -52,3 +52,8 @@ bb plugin config noisegate set threshold strict
 ```sh
 bb plugin build
 ```
+
+## Fork provenance
+
+Rift Labs fork: https://github.com/euforicio/rift-plugin-noisegate
+Upstream: https://github.com/prismatic7/bb-plugin-noisegate
